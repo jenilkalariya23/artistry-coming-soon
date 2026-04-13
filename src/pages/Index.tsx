@@ -61,28 +61,14 @@ const Index = () => {
           Coming Soon
         </motion.p>
 
-        {/* Social links */}
-        <motion.div
+        <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.9 }}
-          className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10"
+          className="mt-10 font-body text-primary-foreground/50 text-sm md:text-base max-w-sm mx-auto leading-relaxed"
         >
-          {[
-            { label: "Eco-Friendly", detail: "100% Non-Toxic" },
-            { label: "Handcrafted", detail: "Made with Love" },
-            { label: "50+ Colors", detail: "Endless Creativity" },
-          ].map((item) => (
-            <div key={item.label} className="text-center">
-              <p className="font-display text-sm text-primary-foreground/70 tracking-[0.2em] uppercase">
-                {item.label}
-              </p>
-              <p className="font-elegant italic text-primary-foreground/50 text-sm mt-1">
-                {item.detail}
-              </p>
-            </div>
-          ))}
-        </motion.div>
+          We're crafting something special. Our premium Jesmonite materials will be available soon. Stay tuned!
+        </motion.p>
       </div>
     </div>
   );
