@@ -67,7 +67,7 @@ const Index = () => {
           transition={{ duration: 0.8, delay: 0.9 }}
           className="mt-10 font-body text-primary-foreground/50 text-sm md:text-base max-w-sm mx-auto leading-relaxed"
         >
-          We're crafting something special. Our premium Jesmonite materials will be available soon. Stay tuned!
+          We're crafting something special. Our premium collection will be available soon. Stay tuned!
         </motion.p>
       </div>
     </div>
