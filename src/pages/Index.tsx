@@ -66,16 +66,21 @@ const Index = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.9 }}
-          className="mt-16 flex items-center justify-center gap-8"
+          className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10"
         >
-          {["Instagram", "Pinterest", "Facebook"].map((social) => (
-            <a
-              key={social}
-              href="#"
-              className="font-body text-xs text-primary-foreground/40 uppercase tracking-[0.2em] hover:text-primary transition-colors"
-            >
-              {social}
-            </a>
+          {[
+            { label: "Eco-Friendly", detail: "100% Non-Toxic" },
+            { label: "Handcrafted", detail: "Made with Love" },
+            { label: "50+ Colors", detail: "Endless Creativity" },
+          ].map((item) => (
+            <div key={item.label} className="text-center">
+              <p className="font-display text-sm text-primary-foreground/70 tracking-[0.2em] uppercase">
+                {item.label}
+              </p>
+              <p className="font-elegant italic text-primary-foreground/50 text-sm mt-1">
+                {item.detail}
+              </p>
+            </div>
           ))}
         </motion.div>
       </div>
