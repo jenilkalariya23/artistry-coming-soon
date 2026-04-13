@@ -24,7 +24,7 @@ const Index = () => {
           transition={{ duration: 0.8 }}
           className="font-elegant text-primary-foreground/70 tracking-[0.35em] uppercase text-sm mb-6"
         >
-          ✦ Premium Jesmonite Materials ✦
+          ✦ Blanconite ✦
         </motion.p>
 
         <motion.h1
